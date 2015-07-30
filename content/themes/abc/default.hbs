@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8">
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles - Foundation 5 included}}
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="{{asset "css/style.css"}}">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{! Document borders}}
+    <div class="tborder"></div>
+    <div class="rborder"></div>
+    <div class="bborder"></div>
+    <div class="lborder"></div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+</body>
+</html>
